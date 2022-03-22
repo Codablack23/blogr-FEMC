@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <section class="hero-section">
+    <nav class="nav">
+        <div class="details">
+          <a href="/" class="nav-brand">Blogr</a>
+          <button class="collapse-btn" data-target="#collapse-nav">
+        <span><i class="bi bi-justify collapse-icon"></i></span>
+      </button>
+    </div>
+      <div class="collapse-navbar" id="collapse-nav">
+        <ul class="navbar">
+          <li class="nav-item dropdown" data-target="#product-menu">
+            <a href="#" class="nav-link dropdown-link" >Product   <span><i class="bi bi-chevron-down" id="product-menu-icon"></i></span></a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-menu-link">Overview</a>
+              <a href="#" class="dropdown-menu-link">Pricing</a>
+              <a href="#" class="dropdown-menu-link">Marketplace</a>
+              <a href="#" class="dropdown-menu-link">Features</a>
+              <a href="#" class="dropdown-menu-link">Integrations</a>
+            </div>
+            <div class="dropdown-menu-sm" id="product-menu">
+              <a href="#" class="dropdown-menu-link">Overview</a>
+              <a href="#" class="dropdown-menu-link">Pricing</a>
+              <a href="#" class="dropdown-menu-link">Marketplace</a>
+              <a href="#" class="dropdown-menu-link">Features</a>
+              <a href="#" class="dropdown-menu-link">Integrations</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown" data-target="#company-menu">
+           <a href="#" class="nav-link dropdown-link" >Company   <span><i class="bi bi-chevron-down" id="company-menu-icon"></i></span></a>
+           <div class="dropdown-menu" >
+             <a href="#" class="dropdown-menu-link">About</a>
+             <a href="#" class="dropdown-menu-link">Pricing</a>
+             <a href="#" class="dropdown-menu-link">Marketplace</a>
+             <a href="#" class="dropdown-menu-link">Careers</a>
+           </div>
+           <div class="dropdown-menu-sm" id="company-menu">
+            <a href="#" class="dropdown-menu-link">About</a>
+            <a href="#" class="dropdown-menu-link">Pricing</a>
+            <a href="#" class="dropdown-menu-link">Marketplace</a>
+            <a href="#" class="dropdown-menu-link">Careers</a>
+          </div>
+         </li>
+         <li class="nav-item dropdown" data-target="#connect-menu">
+           <a href="#" class="nav-link dropdown-link" data-target="#connect-menu">Connect   <span><i class="bi bi-chevron-down" id="connect-menu-icon"></i></span></a>
+           <div class="dropdown-menu" >
+             <a href="#" class="dropdown-menu-link">Contact</a>
+             <a href="#" class="dropdown-menu-link">Newsletter</a>
+             <a href="#" class="dropdown-menu-link">LinkedIn</a>
+           </div>
+           <div class="dropdown-menu-sm" id="connect-menu">
+            <a href="#" class="dropdown-menu-link">Contact</a>
+            <a href="#" class="dropdown-menu-link">Newsletter</a>
+            <a href="#" class="dropdown-menu-link">LinkedIn</a>
+          </div>
+         </li>
+        </ul>
+        <ul class="navbar navbar-right">
+         <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+         <li class="nav-item"><a href="#" class="nav-link hover-none"><button class="btn custom-bg-white custom-text-orange"> Sign Up</button></a></li>
+        </ul>
+    </div>
+    </nav>
+    <div class="hero-content">
+      <h1 class="hero-title">  A modern publishing platform</h1>
+      <p class="hero-text"> Grow your audience and build your online brand</p>
+      <div class="hero-actions">
+        <button class="custom-btn custom-btn-white custom-btn-pill">Start for Free</button>
+        <button class="custom-btn custom-btn-outline-white custom-btn-pill">Learn More</button>
+      </div>
+    </div>
+    </section>
+    <section class="future">
+      <h1 class="center heading">Designed for the future</h1>
+      <div class="row">
+        <div class="laptop-img-container">
+          <img src="./images/illustration-editor-desktop.svg" alt="" class="img-fluid hidden-sm">
+          <img src="./images/illustration-editor-mobile.svg" alt="" class="img-fluid hidden-lg">
+        </div>
+        <div class="text">
+          <div class="text-content">
+            <h1>Introducing an extensible editor</h1>
+          <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+            change the looks of a blog.
+          </p>
+          </div>
+          <br>
+         <div class="text-content">
+          <h1>Robust content management</h1>
+          <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+            by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+          </p>
+         </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="state">
+      <div class="state-row">
+          <div class="col-5">
+            <div class="state-img">
+              <img src="./images/illustration-phones.svg" alt="">
+            </div>
+          </div>
+          <div class="col-7">
+          <h1>State of the Art Infrastructure</h1>
+           <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+          </div>
+      </div>
+    </section>
+    <section class="tooling">
+       <div class="tooling-container">
+         <div class="tooling-img-container">
+            <img src="./images/illustration-laptop-desktop.svg" class="tooling-img hidden-sm" alt="">
+            <img src="./images/illustration-laptop-mobile.svg" class="tooling-img hidden-lg" alt="">
+         </div>
+         <div class="tooling-content">
+          <div class="tooling-text">
+            <h1> Free, open, simple</h1>
+          <p>  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn..
+          </p>
+          </div>
+          <br>
+         <div class="tooling-text">
+          <h1>Powerful tooling</h1>
+          <p>
+            Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+            capable of producing even the most complicated sites.</p>
+         </div>
+         </div>
+       </div>
+    </section>
+    <footer>
+    <div class="footer">
+      <p><a href="/" class="footer-brand">Blogr</a></p>
+      <div class="footer-links-container">
+         <h1 class="footer-title">Product</h1>
+         <a href="#" class="footer-links"> Overview</a>
+         <a href="#" class="footer-links"> Pricing</a>
+         <a href="#" class="footer-links"> Marketplace</a>
+         <a href="#" class="footer-links"> Features</a>
+         <a href="#" class="footer-links"> Integrations </a>
+      </div>
+      <div class="footer-link-container">
+        <h1 class="footer-title">Company</h1>
+        <a href="#" class="footer-links"> About</a>
+        <a href="#" class="footer-links"> Team</a>
+        <a href="#" class="footer-links"> Blog</a>
+        <a href="#" class="footer-links"> Careers</a>
+      </div>
+      <div class="footer-link-container">
+        <h1 class="footer-title">Connect</h1>
+        <a href="#" class="footer-links"> Contact</a>
+        <a href="#" class="footer-links"> Newsletter</a>
+        <a href="#" class="footer-links"> LinkedIn</a>
+      </div>
+    </div>
+    </footer>
+  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>. -->
+  </div>
+  <script>
+    const collapseBtn = document.querySelector('.collapse-btn')
+    const dropdown = document.querySelectorAll('.dropdown')
+
+    collapseBtn.addEventListener('click',()=>{
+      var content = document.querySelector(collapseBtn.getAttribute('data-target'))
+      var icon = document.querySelector('.collapse-icon')
+      setMaxHeight(content,icon,{old:"bi-justify",new:"bi-x-lg"})    
+    })
+
+    function setMaxHeight(content,icon,obj){
+    
+    icon.classList.toggle(obj.old)
+    icon.classList.toggle(obj.new)
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight*3 + "px";
+    }  
+    }
+
+    dropdown.forEach(d=>{
+      d.addEventListener('click',()=>{
+        var content = document.querySelector(d.getAttribute('data-target'))
+        var icon = document.querySelector(`${d.getAttribute('data-target')}-icon`)
+        setMaxHeight(content,icon,{old:"bi-chevron-down",new:"bi-chevron-up"})    
+      })
+    })
+
+  </script>
+</body>
+</html>
